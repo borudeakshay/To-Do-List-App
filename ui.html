@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list app</title>
+</head>
+<body>
+    <header>
+        <h1>Work have to completed</h1>
+    </header>
+    <form>
+        <input type="text" placeholder="Enter The Work" class="todo_input" />
+        <button class="todo_button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filter_todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+    <!-- CONTAINER FOR DISPLAYING TO-DO LIST BY ADDING TASKS DYNAMICALLY USING JAVASCRIPT -->
+    <div class="todo_container">
+        <ul class="todo_list"></ul>
+    </div>
+    <!-- ADDING JAVA SCRIPT -->
+    <script src="./main.js"></script>
+</body>
+</html>
